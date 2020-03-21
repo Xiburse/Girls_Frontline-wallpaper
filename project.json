@@ -1,0 +1,19 @@
+{
+	"file" : "HTML.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"title" : "少前桌宠",
+	"type": "web",
+	"preview" : "image/m4.gif"
+}

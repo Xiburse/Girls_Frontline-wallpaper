@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CSS.css">
+    <script src="JS/jquery.js"></script>
+    <script src="JS/parallax.js"></script>
+    <script src="JS/pixi/pixi.js"></script>
+    <script src="JS/pixi/pixi-spine.js"></script>
+    <script src="JS/JS.js"></script>
+    <script src="config.js"></script>
+    <script src="JS/json.js"></script>
+    <script src="JS/animation.js"></script>
+    <title>wife</title>
+</head>
+
+<body onload="init()">
+    <div id="animate"></div>
+    <div id="scene">
+        <div id="image" data-depth="0.1"></div>
+    </div>
+    <div id="scene_time">
+        <div id="time" data-depth="0.3"></div>
+        <div id="time_day" data-depth="0.2"></div>
+        <div id="time_week" data-depth="0.1"></div>
+    </div>
+    <img src="image/icons/autorenew.png" alt="" id="refresh" onclick="window.location.reload()">
+</body>
+
+</html>
