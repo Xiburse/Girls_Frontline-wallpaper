@@ -18,26 +18,25 @@ function init() {
     stage = new PIXI.Container();
 
     var R = new Array();
-    // for (var j = 0; j < 323; j++) {
-    //     R[j] = json[Math.floor(Math.random() * 323)].name;
-    //     var x = 0;
-    //     var y = 0;
-    //     while (true) {
-    //         for (x = 0; x < pc.length; x++)
-    //             if (R[j] == pc[x])
-    //                 break;
-    //         for (y = 0; y < j; y++)
-    //             if (R[j] == R[y])
-    //                 break;
-    //         if (x == pc.length && y == j)
-    //             break;
-    //         else
-    //             R[j] = json[Math.floor(Math.random() * (323 - 1 + 1)) + 1].name;
-    //     }
-    // }
-    // for (var j = 11; j < 25; j++){
-        var animation = new Animate("9A91", if_r, false);
-    // }
+    for (var j = 0; j < quantity; j++) {
+        R[j] = json[Math.floor(Math.random() * 323)].name;
+        var x = 0;
+        var y = 0;
+        while (true) {
+            for (x = 0; x < pc.length; x++)
+                if (R[j] == pc[x])
+                    break;
+            for (y = 0; y < j; y++)
+                if (R[j] == R[y])
+                    break;
+            if (x == pc.length && y == j)
+                break;
+            else
+                R[j] = json[Math.floor(Math.random() * (323 - 1 + 1)) + 1].name;
+        }
+    }
+    for (var j = 0; j < quantity; j++)
+        var animation = new Animate(R[j], if_r, false);
 
     animate();
     function animate() {
@@ -93,6 +92,7 @@ function Configuration() {
 }
 
 function time() {
+    console.log("done");
     var time_div = document.getElementById("time");
     var time_day_div = document.getElementById("time_day");
     var time_week_div = document.getElementById("time_week");

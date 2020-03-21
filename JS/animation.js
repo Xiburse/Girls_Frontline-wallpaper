@@ -9,7 +9,6 @@ class Animate {
         return this.name;
     }
     init() {
-        console.log(this.name);
         var i = 0;
         for (i = 0; i < initLoad.length; i++)
             if (initLoad[i] == this.name)
