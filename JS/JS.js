@@ -105,7 +105,7 @@ function time() {
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
     time_div.innerHTML = year + "." + month + "." + day;
-    time_week_div.innerHTML = "周 " + weekArray[week - 1];
+    console.log(week);
+    time_week_div.innerHTML = "周 " + weekArray[(week + 6) % 7];
     time_day_div.innerHTML = hours + ": " + minutes + ": " + seconds;
-
 }
