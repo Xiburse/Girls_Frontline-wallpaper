@@ -130,7 +130,7 @@ class Animate {
                 animation.state.setAnimationByName(0, 'wait', true, 0);
             else if (isS == 0 && if_r == "")
                 animation.state.setAnimationByName(0, 'attack', true, 0);
-            if(animation.y != Y && window.event.buttons == 0)
+            if(animation.y != Y && ifOnmoustdown == 0)
                 onDragEnd(event);
             stage.setChildIndex(animation, sum - 1);
             document.getElementsByTagName("canvas")[0].style.position = "absolute";

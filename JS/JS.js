@@ -6,6 +6,15 @@ var initLoad = new Array();
 var weekArray = new Array("一", "二", "三", "四", "五", "六", "日");
 var spineResources = new Map();
 var if_r;
+var ifOnmoustdown;
+
+function onMouseDown(){
+    ifOnmoustdown = 1;
+}
+
+function onMouseUp(){
+    ifOnmoustdown = 0;
+}
 
 function init() {
 
