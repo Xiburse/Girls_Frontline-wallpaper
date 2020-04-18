@@ -92,7 +92,6 @@ function Configuration() {
 }
 
 function time() {
-    console.log("done");
     var time_div = document.getElementById("time");
     var time_day_div = document.getElementById("time_day");
     var time_week_div = document.getElementById("time_week");
@@ -105,7 +104,6 @@ function time() {
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
     time_div.innerHTML = year + "." + month + "." + day;
-    console.log(week);
     time_week_div.innerHTML = "周 " + weekArray[(week + 6) % 7];
     time_day_div.innerHTML = hours + ": " + minutes + ": " + seconds;
 }

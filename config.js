@@ -20,7 +20,7 @@ var background_url = "image/background.jpg";
 var start_background = false;
 
 // 开启（关闭）战斗（战斗没有鼠标事件）
-var battle = true;
+var battle = false;
 
 // 开启（关闭）视差背景（不知道在想啥）
 var start_Transparent = true;
