@@ -37,7 +37,7 @@ class Animate {
     loadAdd(animation, stage, name, ifNew) {
         stage.addChild(animation);
         animation.state.addAnimationByName(0, 'wait', true, 0);
-
+        animation.stateData.setMixByName("wait", "wait", 0.2);
         if (ifNew == true)
             animation.x = -100;
         else
