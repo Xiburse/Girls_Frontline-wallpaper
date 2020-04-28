@@ -38,6 +38,7 @@ class Animate {
         stage.addChild(animation);
         animation.state.addAnimationByName(0, 'wait', true, 0);
         animation.stateData.setMixByName("wait", "wait", 0.2);
+        animation.stateData.setMixByName("move", "wait", 0.2);
         if (ifNew == true)
             animation.x = -100;
         else
